@@ -8,6 +8,6 @@
 - [x] 增加额外生命周期回归测试
 - [x] 在虚拟机中 clean build、官方测试、usertests 和额外测试
 - [x] 整理过程文档、验证证据与源码哈希
-- [ ] 提交并推送 GitHub，核对远端提交
+- [x] 提交并推送 GitHub，核对远端提交
 
 当前实现面向 `conf/lab.mk: LAB=pgtbl`。
