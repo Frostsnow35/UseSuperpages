@@ -1,0 +1,15 @@
+Linux-7.0.0-34-generic-x86_64-with-glibc2.39
+riscv64-linux-gnu-gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.16)
+Copyright (c) 2003-2023 Fabrice Bellard and the QEMU Project developers
+Python 3.12.3
+GNU Make 4.3
+為 x86_64-pc-linux-gnu 編譯
+Copyright (C) 1988-2020 Free Software Foundation, Inc.
+授權條款：GPLv3+：GNU 通用公共授權條款第 3 版或更新版本<http://gnu.org/licenses/gpl.html>。
+本軟體是自由軟體：您可以自由修改和重新發布它。
+在法律允許的範圍內沒有其他保證。

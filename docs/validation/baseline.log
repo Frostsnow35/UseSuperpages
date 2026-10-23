@@ -1,0 +1,33 @@
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:22: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\.0x0000000000000000',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:23: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\.0x0000000000000000',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:24: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.0x0000000000000000',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:25: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.0x0000000000001000',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:26: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.0x0000000000002000',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:27: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.0x0000000000003000',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:28: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\.(0xffffffffc0000000|0x0000003fc0000000)',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:29: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\.(0xffffffffffe00000|0x0000003fffe00000)',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:30: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.(0xffffffffffffd000|0x0000003fffffd000)',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:31: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.(0xffffffffffffe000|0x0000003fffffe000)',
+/home/chika/xv6-labs-2025/grade-lab-pgtbl:32: SyntaxWarning: invalid escape sequence '\.'
+  '^ \.\. \.\. \.\.(0xfffffffffffff000|0x0000003ffffff000)',
+make: 「kernel/kernel」已是最新。
+== Test pgtbltest == (5.0s) 
+== Test   pgtbltest: superpg == 
+  pgtbltest: superpg: FAIL 
+    ...
+          .. .. ..0x0000003ffffff000: pte 0x000000002000184b pa 0x0000000080006000
+         print_kpgtbl: OK
+         superpg_fork starting
+         pgtbltest: superpg_fork failed: pte different, pid=3
+         $ qemu-system-riscv64: terminating on signal 15 from pid 27016 (make)
+    MISSING '^superpg_fork: OK$'

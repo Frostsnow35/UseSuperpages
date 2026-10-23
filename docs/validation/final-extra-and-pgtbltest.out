@@ -1,0 +1,65 @@
+nmeta 47 (boot, super, log blocks 31, inode blocks 13, bitmap blocks 1) blocks 1953 total 2000
+balloc: first 1011 blocks have been allocated
+balloc: write bitmap block at sector 46
+*** Now run 'gdb' in another window.
+
+xv6 kernel is booting
+
+hart 2 starting
+hart 1 starting
+init: starting sh
+$ superpgextra
+superpgextra: reuse/copy/fork OK
+superpgextra: pool/rollback OK
+superpgextra: OOM demotion OK
+superpgextra: all tests succeeded
+$ pgtbltest
+print_pgtbl starting
+va 0x0 pte 0x20DC505B pa 0x83714000 perm 0x5B
+va 0x1000 pte 0x20F45C5B pa 0x83D17000 perm 0x5B
+va 0x2000 pte 0x20FC6017 pa 0x83F18000 perm 0x17
+va 0x3000 pte 0x21046407 pa 0x84119000 perm 0x7
+va 0x4000 pte 0x210C68D7 pa 0x8431A000 perm 0xD7
+va 0x5000 pte 0x0 pa 0x0 perm 0x0
+va 0x6000 pte 0x0 pa 0x0 perm 0x0
+va 0x7000 pte 0x0 pa 0x0 perm 0x0
+va 0x8000 pte 0x0 pa 0x0 perm 0x0
+va 0x9000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFF6000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFF7000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFF8000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFF9000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFFA000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFFB000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFFC000 pte 0x0 pa 0x0 perm 0x0
+va 0x3FFFFFD000 pte 0x217C8813 pa 0x85F22000 perm 0x13
+va 0x3FFFFFE000 pte 0x217D48C7 pa 0x85F52000 perm 0xC7
+va 0x3FFFFFF000 pte 0x20001C4B pa 0x80007000 perm 0x4B
+print_pgtbl: OK
+ugetpid_test starting
+ugetpid_test: OK
+print_kpgtbl starting
+page table 0x0000000083111000
+ ..0x0000000000000000: pte 0x0000000020e45401 pa 0x0000000083915000
+ .. ..0x0000000000000000: pte 0x0000000020ec5801 pa 0x0000000083b16000
+ .. .. ..0x0000000000000000: pte 0x0000000020dc505b pa 0x0000000083714000
+ .. .. ..0x0000000000001000: pte 0x0000000020f45c5b pa 0x0000000083d17000
+ .. .. ..0x0000000000002000: pte 0x0000000020fc60d7 pa 0x0000000083f18000
+ .. .. ..0x0000000000003000: pte 0x0000000021046407 pa 0x0000000084119000
+ .. .. ..0x0000000000004000: pte 0x00000000210c68d7 pa 0x000000008431a000
+ ..0x0000003fc0000000: pte 0x0000000020cc4801 pa 0x0000000083312000
+ .. ..0x0000003fffe00000: pte 0x0000000020d44c01 pa 0x0000000083513000
+ .. .. ..0x0000003fffffd000: pte 0x00000000217c8853 pa 0x0000000085f22000
+ .. .. ..0x0000003fffffe000: pte 0x00000000217d48c7 pa 0x0000000085f52000
+ .. .. ..0x0000003ffffff000: pte 0x0000000020001c4b pa 0x0000000080007000
+print_kpgtbl: OK
+superpg_fork starting
+usertrap(): unexpected scause 0xf pid=95
+            sepc=0x2ec stval=0x5001
+superpg_fork: OK
+superpg_free starting
+usertrap(): unexpected scause 0xd pid=96
+            sepc=0x40a stval=0xfff001
+superpg_free: OK
+pgtbltest: all tests succeeded
+$ qemu-system-riscv64: terminating on signal 15 from pid 30262 (make)

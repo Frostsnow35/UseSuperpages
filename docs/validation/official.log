@@ -1,0 +1,9 @@
+make: 「kernel/kernel」已是最新。
+== Test pgtbltest == (6.4s) 
+== Test   pgtbltest: ugetpid == 
+  pgtbltest: ugetpid: OK 
+== Test   pgtbltest: print_kpgtbl == 
+  pgtbltest: print_kpgtbl: OK 
+== Test   pgtbltest: superpg == 
+  pgtbltest: superpg: OK 
+== Test usertests == (66.3s) 

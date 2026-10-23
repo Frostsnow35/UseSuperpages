@@ -1,0 +1,11 @@
+make: 「kernel/kernel」已是最新。
+== Test superpages extra == Timeout! superpages extra: FAIL (181.1s) 
+    ...
+         hart 1 starting
+         init: starting sh
+         $ superpgextra
+         panic: supermappages: remap
+         qemu-system-riscv64: terminating on signal 15 from pid 28606 (make)
+    MISSING '^superpgextra: all tests succeeded$'
+    QEMU output saved to xv6.extra.out.extra
+Score: 0/1

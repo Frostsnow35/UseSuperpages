@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+from gradelib import *
+
+r = Runner(save("xv6.extra.out"))
+
+@test(1, "superpages extra")
+def test_extra():
+    r.run_qemu(shell_script(["superpgextra", "pgtbltest"]), timeout=180)
+    r.match("^superpgextra: all tests succeeded$")
+    r.match("^pgtbltest: all tests succeeded$")
+
+run_tests()
